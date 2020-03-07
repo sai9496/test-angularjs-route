@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Angular js routing</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <div class="container w-100 h-100">
+        <header class="w-100 p-0 m-0">
+            <nav class="navbar navbar-expand-md bg-dark navbar-dark m-0 p-0">
+                <ul class="navbar-nav m-0 p-0">
+                    <li class="nav-item"><a ui-sref="home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a ui-sref="contact" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a ui-sref="profile" class="nav-link">Profile</a></li>
+                    <li class="nav-item"><a ui-sref="services" class="nav-link">Services</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="w-100 bg-secondary m-0 p-0">
+            <ui-view></ui-view>
+        </section>
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-ui-router.min.js"></script>
+    <script src="js/all.js"></script>
+    <script src="js/controller/homeCtrl.js"></script>
+    <script src="js/controller/contactCtrl.js"></script>
+    <script src="js/controller/profileCtrl.js"></script>
+    <script src="js/controller/servicesCtrl.js"></script>
+</body>
+
+</html>
